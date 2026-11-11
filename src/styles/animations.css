@@ -1,0 +1,149 @@
+@keyframes fadeInOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInTranslate {
+  from {
+    transform: translateY(0.75vh);
+  }
+  to {
+    transform: translateY(0vh);
+  }
+}
+
+@keyframes aurora {
+  from {
+    background-position: 50% 50%, 50% 50%;
+  }
+  to {
+    background-position: 350% 50%, 350% 50%;
+  }
+}
+
+@keyframes ray-pulse {
+  0%, 100% { opacity: 0; }
+  50% { opacity: var(--ray-opacity); }
+}
+
+@keyframes rotated-ray-pulse {
+  0%, 100% { opacity: 0; }
+  50% { opacity: var(--ray-opacity); }
+}
+
+@keyframes floating-move-in-circle {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(180deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes floating-move-vertical {
+  0% { transform: translateY(-50%); }
+  50% { transform: translateY(50%); }
+  100% { transform: translateY(-50%); }
+}
+
+@keyframes floating-move-horizontal {
+  0% { transform: translateX(-50%) translateY(-10%); }
+  50% { transform: translateX(50%) translateY(10%); }
+  100% { transform: translateX(-50%) translateY(-10%); }
+}
+
+@keyframes cell-wave-pulse {
+  0%, 100% { opacity: 0; }
+  11% { opacity: 0.05; }
+  22% { opacity: 0.15; }
+  33% { opacity: 0.25; }
+  44% { opacity: 0.5; }
+  55% { opacity: 0.25; }
+  66% { opacity: 0.15; }
+  77% { opacity: 0.05; }
+  88% { opacity: 0; }
+}
+
+@keyframes pulsate {
+  0% {
+    box-shadow: 0 0 0 0 var(--accent);
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    box-shadow: 0 0 20px 10px transparent;
+    transform: scale(0.9);
+  }
+}
+
+@keyframes progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes marquee-horizontal {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-horizontal-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes marquee-vertical {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes marquee-vertical-reverse {
+  from {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate-pulsate {
+  animation: pulsate 1.5s infinite;
+}
+
+.animate-progress {
+  animation: progress linear forwards;
+}
+
+.animate-marquee-horizontal {
+  animation: marquee-horizontal 15s linear infinite;
+}
+
+.animate-marquee-horizontal-reverse {
+  animation: marquee-horizontal-reverse 15s linear infinite;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical 40s linear infinite;
+}
+
+.animate-marquee-vertical-reverse {
+  animation: marquee-vertical-reverse 40s linear infinite;
+}

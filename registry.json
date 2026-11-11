@@ -1,0 +1,2377 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "webild-ui",
+  "homepage": "https://github.com/rainerahi/webild-mcp-components",
+  "items": [
+    {
+      "name": "aurora-background",
+      "type": "registry:ui",
+      "title": "AuroraBackground",
+      "description": "Blurred rotated colour ribbons forming a soft aurora wash.",
+      "categories": [
+        "backgrounds"
+      ],
+      "props": "className?",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/backgrounds/AuroraBackground.tsx",
+          "type": "registry:ui",
+          "target": "components/backgrounds/AuroraBackground.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-edge-glow",
+      "type": "registry:ui",
+      "title": "CardEdgeGlow",
+      "description": "Wrapper whose border lights up and tracks the cursor as it approaches. Pass layout and surface classes via className; the glow inherits its corners.",
+      "categories": [
+        "animation"
+      ],
+      "props": "children, className?",
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/animation/CardEdgeGlow.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/CardEdgeGlow.tsx"
+        }
+      ]
+    },
+    {
+      "name": "button-arrow",
+      "type": "registry:ui",
+      "title": "ButtonArrow",
+      "description": "Button whose arrow spins away and is replaced by a second arrow sliding in on hover.",
+      "categories": [
+        "buttons"
+      ],
+      "props": "text, href?, onClick?, className?",
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/buttons/ButtonArrow.tsx",
+          "type": "registry:ui",
+          "target": "components/buttons/ButtonArrow.tsx"
+        }
+      ]
+    },
+    {
+      "name": "button-bounce",
+      "type": "registry:ui",
+      "title": "ButtonBounce",
+      "description": "Button that scales down and tilts on hover while each character rolls up to a duplicate beneath it.",
+      "categories": [
+        "buttons"
+      ],
+      "props": "text, href?, onClick?, className?",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/buttons/ButtonBounce.tsx",
+          "type": "registry:ui",
+          "target": "components/buttons/ButtonBounce.tsx"
+        }
+      ]
+    },
+    {
+      "name": "button-bubble",
+      "type": "registry:ui",
+      "title": "ButtonBubble",
+      "description": "Button with a circular fill that scales up from nothing on hover as the arrow rotates.",
+      "categories": [
+        "buttons"
+      ],
+      "props": "text, href?, onClick?, className?",
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/buttons/ButtonBubble.tsx",
+          "type": "registry:ui",
+          "target": "components/buttons/ButtonBubble.tsx"
+        }
+      ]
+    },
+    {
+      "name": "button-elastic",
+      "type": "registry:ui",
+      "title": "ButtonElastic",
+      "description": "Button that springs wider and squashes vertically on hover, settling with spring physics.",
+      "categories": [
+        "buttons"
+      ],
+      "props": "text, href?, onClick?, className?",
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/buttons/ButtonElastic.tsx",
+          "type": "registry:ui",
+          "target": "components/buttons/ButtonElastic.tsx"
+        }
+      ]
+    },
+    {
+      "name": "button-expand",
+      "type": "registry:ui",
+      "title": "ButtonExpand",
+      "description": "Button with a fill that sits behind the trailing icon and expands across the full width on hover, inverting the label colour as it passes.",
+      "categories": [
+        "buttons"
+      ],
+      "props": "text, href?, onClick?, className?",
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/buttons/ButtonExpand.tsx",
+          "type": "registry:ui",
+          "target": "components/buttons/ButtonExpand.tsx"
+        }
+      ]
+    },
+    {
+      "name": "button-flip",
+      "type": "registry:ui",
+      "title": "ButtonFlip",
+      "description": "Button with a per-character 3D flip that swaps two copies of the label on hover.",
+      "categories": [
+        "buttons"
+      ],
+      "props": "text, href?, onClick?, className?",
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/buttons/ButtonFlip.tsx",
+          "type": "registry:ui",
+          "target": "components/buttons/ButtonFlip.tsx"
+        }
+      ]
+    },
+    {
+      "name": "button-magnetic",
+      "type": "registry:ui",
+      "title": "ButtonMagnetic",
+      "description": "Button that follows the cursor with spring physics inside its bounds. Inert below 768px.",
+      "categories": [
+        "buttons"
+      ],
+      "props": "text, href?, onClick?, className?",
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/buttons/ButtonMagnetic.tsx",
+          "type": "registry:ui",
+          "target": "components/buttons/ButtonMagnetic.tsx"
+        }
+      ]
+    },
+    {
+      "name": "button-shift",
+      "type": "registry:ui",
+      "title": "ButtonShift",
+      "description": "Button whose characters all slide up together to reveal a duplicate label beneath.",
+      "categories": [
+        "buttons"
+      ],
+      "props": "text, href?, onClick?, className?",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/buttons/ButtonShift.tsx",
+          "type": "registry:ui",
+          "target": "components/buttons/ButtonShift.tsx"
+        }
+      ]
+    },
+    {
+      "name": "button-stagger",
+      "type": "registry:ui",
+      "title": "ButtonStagger",
+      "description": "Button whose characters slide up one after another, each delayed by 10ms, revealing a duplicate label beneath.",
+      "categories": [
+        "buttons"
+      ],
+      "props": "text, href?, onClick?, className?",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/buttons/ButtonStagger.tsx",
+          "type": "registry:ui",
+          "target": "components/buttons/ButtonStagger.tsx"
+        }
+      ]
+    },
+    {
+      "name": "column-wave-background",
+      "type": "registry:ui",
+      "title": "ColumnWaveBackground",
+      "description": "Row of vertical columns pulsing in a travelling wave.",
+      "categories": [
+        "backgrounds"
+      ],
+      "props": "className?",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/backgrounds/ColumnWaveBackground.tsx",
+          "type": "registry:ui",
+          "target": "components/backgrounds/ColumnWaveBackground.tsx"
+        }
+      ],
+      "css": {
+        "@keyframes cell-wave-pulse": "0%, 100% { opacity: 0; } 11% { opacity: 0.05; } 22% { opacity: 0.15; } 33% { opacity: 0.25; } 44% { opacity: 0.5; } 55% { opacity: 0.25; } 66% { opacity: 0.15; } 77% { opacity: 0.05; } 88% { opacity: 0; }"
+      }
+    },
+    {
+      "name": "smooth-cursor-line",
+      "type": "registry:ui",
+      "title": "SmoothCursorLine",
+      "description": "Canvas ribbon that trails the cursor across the viewport, fading along its length. Takes a CSS custom property name so it follows the theme; hidden below 992px.",
+      "categories": [
+        "animation"
+      ],
+      "props": "token?",
+      "files": [
+        {
+          "path": "src/components/animation/SmoothCursorLine.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/SmoothCursorLine.tsx"
+        }
+      ]
+    },
+    {
+      "name": "floating-gradient-background",
+      "type": "registry:ui",
+      "title": "FloatingGradientBackground",
+      "description": "Slow-drifting gradient orbs on independent orbits.",
+      "categories": [
+        "backgrounds"
+      ],
+      "props": "className?",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/backgrounds/FloatingGradientBackground.tsx",
+          "type": "registry:ui",
+          "target": "components/backgrounds/FloatingGradientBackground.tsx"
+        }
+      ],
+      "css": {
+        "@keyframes floating-move-horizontal": "0% { transform: translateX(-50%) translateY(-10%); } 50% { transform: translateX(50%) translateY(10%); } 100% { transform: translateX(-50%) translateY(-10%); }",
+        "@keyframes floating-move-in-circle": "0% { transform: rotate(0deg); } 50% { transform: rotate(180deg); } 100% { transform: rotate(360deg); }",
+        "@keyframes floating-move-vertical": "0% { transform: translateY(-50%); } 50% { transform: translateY(50%); } 100% { transform: translateY(-50%); }"
+      }
+    },
+    {
+      "name": "gradient-bars-background",
+      "type": "registry:ui",
+      "title": "GradientBarsBackground",
+      "description": "Vertical gradient bars fading toward the top edge.",
+      "categories": [
+        "backgrounds"
+      ],
+      "props": "className?",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/backgrounds/GradientBarsBackground.tsx",
+          "type": "registry:ui",
+          "target": "components/backgrounds/GradientBarsBackground.tsx"
+        }
+      ]
+    },
+    {
+      "name": "grid-lines-background",
+      "type": "registry:ui",
+      "title": "GridLinesBackground",
+      "description": "Faint grid lines with a radial mask fading the edges.",
+      "categories": [
+        "backgrounds"
+      ],
+      "props": "className?",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/backgrounds/GridLinesBackground.tsx",
+          "type": "registry:ui",
+          "target": "components/backgrounds/GridLinesBackground.tsx"
+        }
+      ]
+    },
+    {
+      "name": "horizon-glow-background",
+      "type": "registry:ui",
+      "title": "HorizonGlowBackground",
+      "description": "Wide glow along the bottom edge, like light past a horizon.",
+      "categories": [
+        "backgrounds"
+      ],
+      "props": "className?",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/backgrounds/HorizonGlowBackground.tsx",
+          "type": "registry:ui",
+          "target": "components/backgrounds/HorizonGlowBackground.tsx"
+        }
+      ]
+    },
+    {
+      "name": "letter-spotlight-card",
+      "type": "registry:ui",
+      "title": "LetterSpotlightCard",
+      "description": "Wrapper that reveals a dot pattern behind its children on hover.",
+      "categories": [
+        "animation"
+      ],
+      "props": "children, className?",
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/animation/LetterSpotlightCard.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/LetterSpotlightCard.tsx"
+        }
+      ]
+    },
+    {
+      "name": "light-rays-center-background",
+      "type": "registry:ui",
+      "title": "LightRaysCenterBackground",
+      "description": "Rays fanning from a central point with staggered opacity pulses.",
+      "categories": [
+        "backgrounds"
+      ],
+      "props": "className?",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/backgrounds/LightRaysCenterBackground.tsx",
+          "type": "registry:ui",
+          "target": "components/backgrounds/LightRaysCenterBackground.tsx"
+        }
+      ],
+      "css": {
+        "@keyframes ray-pulse": "0%, 100% { opacity: 0; } 50% { opacity: var(--ray-opacity); }"
+      }
+    },
+    {
+      "name": "light-rays-corner-background",
+      "type": "registry:ui",
+      "title": "LightRaysCornerBackground",
+      "description": "Angled light rays sweeping from a top corner.",
+      "categories": [
+        "backgrounds"
+      ],
+      "props": "className?",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/backgrounds/LightRaysCornerBackground.tsx",
+          "type": "registry:ui",
+          "target": "components/backgrounds/LightRaysCornerBackground.tsx"
+        }
+      ],
+      "css": {
+        "@keyframes rotated-ray-pulse": "0%, 100% { opacity: 0; } 50% { opacity: var(--ray-opacity); }"
+      }
+    },
+    {
+      "name": "corner-glow-background",
+      "type": "registry:ui",
+      "title": "CornerGlowBackground",
+      "description": "Two soft radial glows bleeding in from opposite corners.",
+      "categories": [
+        "backgrounds"
+      ],
+      "props": "className?",
+      "files": [
+        {
+          "path": "src/components/backgrounds/CornerGlowBackground.tsx",
+          "type": "registry:ui",
+          "target": "components/backgrounds/CornerGlowBackground.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "noise-background",
+      "type": "registry:ui",
+      "title": "NoiseBackground",
+      "description": "Primary-tinted wash with a fine film-grain noise overlay.",
+      "categories": [
+        "backgrounds"
+      ],
+      "props": "className?",
+      "files": [
+        {
+          "path": "src/components/backgrounds/NoiseBackground.tsx",
+          "type": "registry:ui",
+          "target": "components/backgrounds/NoiseBackground.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "noise-gradient-background",
+      "type": "registry:ui",
+      "title": "NoiseGradientBackground",
+      "description": "Diagonal primary gradient with a film-grain noise overlay.",
+      "categories": [
+        "backgrounds"
+      ],
+      "props": "className?",
+      "files": [
+        {
+          "path": "src/components/backgrounds/NoiseGradientBackground.tsx",
+          "type": "registry:ui",
+          "target": "components/backgrounds/NoiseGradientBackground.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "navbar-floating",
+      "type": "registry:ui",
+      "title": "NavbarFloating",
+      "description": "Detached pill-shaped navbar floating over the page.",
+      "categories": [
+        "navbars"
+      ],
+      "props": "logo, navItems, ctaButton",
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "motion",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/navbars/NavbarFloating.tsx",
+          "type": "registry:ui",
+          "target": "components/navbars/NavbarFloating.tsx"
+        }
+      ]
+    },
+    {
+      "name": "navbar-fullscreen",
+      "type": "registry:ui",
+      "title": "NavbarFullscreen",
+      "description": "Minimal bar whose hamburger opens a fullscreen overlay of oversized links.",
+      "categories": [
+        "navbars"
+      ],
+      "props": "logo, navItems, ctaButton",
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/navbars/NavbarFullscreen.tsx",
+          "type": "registry:ui",
+          "target": "components/navbars/NavbarFullscreen.tsx"
+        }
+      ]
+    },
+    {
+      "name": "navbar-centered",
+      "type": "registry:ui",
+      "title": "NavbarCentered",
+      "description": "Full-width bar with logo left, links centered and CTA right; turns into a card on scroll.",
+      "categories": [
+        "navbars"
+      ],
+      "props": "logo, navItems, ctaButton, buttonStagger?",
+      "files": [
+        {
+          "path": "src/components/navbars/NavbarCentered.tsx",
+          "type": "registry:ui",
+          "target": "components/navbars/NavbarCentered.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "stagger-text"
+      ]
+    },
+    {
+      "name": "navbar-centered-overlay",
+      "type": "registry:ui",
+      "title": "NavbarCenteredOverlay",
+      "description": "Transparent absolute bar in light text for sitting on top of a dark hero image.",
+      "categories": [
+        "navbars"
+      ],
+      "props": "logo, navItems, ctaButton",
+      "files": [
+        {
+          "path": "src/components/navbars/NavbarCenteredOverlay.tsx",
+          "type": "registry:ui",
+          "target": "components/navbars/NavbarCenteredOverlay.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "motion",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "navbar-dropdown",
+      "type": "registry:ui",
+      "title": "NavbarDropdown",
+      "description": "Pill bar whose menu button drops a panel of links below it.",
+      "categories": [
+        "navbars"
+      ],
+      "props": "logo, navItems, ctaButton",
+      "files": [
+        {
+          "path": "src/components/navbars/NavbarDropdown.tsx",
+          "type": "registry:ui",
+          "target": "components/navbars/NavbarDropdown.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "motion",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "navbar-floating-logo",
+      "type": "registry:ui",
+      "title": "NavbarFloatingLogo",
+      "description": "Floating pill navbar with an image logo and an expanding menu over a dimmed page.",
+      "categories": [
+        "navbars"
+      ],
+      "props": "logo, logoImageSrc, navItems, ctaButton",
+      "files": [
+        {
+          "path": "src/components/navbars/NavbarFloatingLogo.tsx",
+          "type": "registry:ui",
+          "target": "components/navbars/NavbarFloatingLogo.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "motion",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "navbar-fullscreen-static",
+      "type": "registry:ui",
+      "title": "NavbarFullscreenStatic",
+      "description": "Absolute bar over the hero whose menu opens a fullscreen overlay of oversized links.",
+      "categories": [
+        "navbars"
+      ],
+      "props": "logo, navItems, ctaButton",
+      "files": [
+        {
+          "path": "src/components/navbars/NavbarFullscreenStatic.tsx",
+          "type": "registry:ui",
+          "target": "components/navbars/NavbarFullscreenStatic.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "navbar-inline",
+      "type": "registry:ui",
+      "title": "NavbarInline",
+      "description": "Fixed pill bar with logo, inline links and a CTA on one row.",
+      "categories": [
+        "navbars"
+      ],
+      "props": "logo, navItems, ctaButton",
+      "files": [
+        {
+          "path": "src/components/navbars/NavbarInline.tsx",
+          "type": "registry:ui",
+          "target": "components/navbars/NavbarInline.tsx"
+        }
+      ]
+    },
+    {
+      "name": "navbar-links-static",
+      "type": "registry:ui",
+      "title": "NavbarLinksStatic",
+      "description": "Absolute bar over a dark hero: logo and inline links in light text, collapsing to a menu button with an animated panel on mobile.",
+      "categories": [
+        "navbars"
+      ],
+      "props": "logo, navItems",
+      "files": [
+        {
+          "path": "src/components/navbars/NavbarLinksStatic.tsx",
+          "type": "registry:ui",
+          "target": "components/navbars/NavbarLinksStatic.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "motion",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "navbar-store",
+      "type": "registry:ui",
+      "title": "NavbarStore",
+      "description": "Fixed store navbar: an optional thin announcement strip whose messages scroll in an endless marquee, above a white bar with the wordmark on the left, links centred with an underline that draws in on hover, and a text link plus account, wishlist and bag icons on the right. On mobile the links and text link collapse into a menu button with an animated panel.",
+      "categories": [
+        "navbars"
+      ],
+      "props": "logo, announcements?, navItems, ctaButton",
+      "files": [
+        {
+          "path": "src/components/navbars/NavbarStore.tsx",
+          "type": "registry:ui",
+          "target": "components/navbars/NavbarStore.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "motion",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "loader-swirl",
+      "type": "registry:ui",
+      "title": "LoaderSwirl",
+      "description": "Fullscreen intro loader: a thick brush-stroke swirl in the foreground color covers the screen, then unwinds to reveal the page. Calls onComplete when done.",
+      "categories": [
+        "loaders"
+      ],
+      "props": "onComplete?",
+      "dependencies": [
+        "gsap",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "src/components/loaders/LoaderSwirl.tsx",
+          "type": "registry:ui",
+          "target": "components/loaders/LoaderSwirl.tsx"
+        }
+      ]
+    },
+    {
+      "name": "appear-on-scroll",
+      "type": "registry:ui",
+      "title": "AppearOnScroll",
+      "description": "Wrapper that reveals its children once when scrolled into view. Same three variants as WordByWordReveal (slide-up, fade-blur, fade), plus rotate-scale, which lifts the content in from a slight tilt and smaller scale on a soft overshoot-free ease; with an optional delay for staggering.",
+      "categories": [
+        "animation"
+      ],
+      "props": "children, variant, delay?, className?",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "src/components/animation/AppearOnScroll.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/AppearOnScroll.tsx"
+        }
+      ]
+    },
+    {
+      "name": "selector-button",
+      "type": "registry:ui",
+      "title": "SelectorButton",
+      "description": "Segmented control with an indicator that slides and resizes to the active option.",
+      "categories": [
+        "buttons"
+      ],
+      "props": "options, activeValue, onValueChange, className?",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/buttons/SelectorButton.tsx",
+          "type": "registry:ui",
+          "target": "components/buttons/SelectorButton.tsx"
+        }
+      ]
+    },
+    {
+      "name": "word-by-word-reveal",
+      "type": "registry:ui",
+      "title": "WordByWordReveal",
+      "description": "Reveals a heading word by word on scroll into view. Three variants: slide-up, fade-blur, fade. Set immediate to play on mount instead, for above-the-fold copy.",
+      "categories": [
+        "animation"
+      ],
+      "props": "text, variant, tag?, className?, immediate?",
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/animation/WordByWordReveal.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/WordByWordReveal.tsx"
+        }
+      ]
+    },
+    {
+      "name": "text-color-fill-on-scroll",
+      "type": "registry:ui",
+      "title": "TextColorFillOnScroll",
+      "description": "Brightens a heading word by word as the block travels through the viewport. Optional blur makes each word also sharpen from blurred as it fills; offset sets the scroll range (useful when the heading is pinned).",
+      "categories": [
+        "animation"
+      ],
+      "props": "text, tag?, dimmed?, blur?, offset?, className?",
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/animation/TextColorFillOnScroll.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/TextColorFillOnScroll.tsx"
+        }
+      ]
+    },
+    {
+      "name": "tilted-card-slideshow",
+      "type": "registry:ui",
+      "title": "TiltedCardSlideshow",
+      "description": "Auto-advancing carousel whose side slides sit back in 3D behind a blur. Renders one slot per item, up to five.",
+      "categories": [
+        "animation"
+      ],
+      "props": "items, autoPlayInterval?",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "src/components/animation/TiltedCardSlideshow.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/TiltedCardSlideshow.tsx"
+        }
+      ]
+    },
+    {
+      "name": "scroll-paced-video",
+      "type": "registry:ui",
+      "title": "ScrollPacedVideo",
+      "description": "Scrubs a video's playback with scroll position inside a sticky viewport. Holds a spinner until the video can play through, then fades any overlay children in.",
+      "categories": [
+        "animation"
+      ],
+      "props": "videoSrc, children?, scrollLength?, className?",
+      "dependencies": [
+        "@gsap/react",
+        "clsx",
+        "gsap",
+        "motion",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/animation/ScrollPacedVideo.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/ScrollPacedVideo.tsx"
+        }
+      ]
+    },
+    {
+      "name": "theme-tokens",
+      "type": "registry:theme",
+      "title": "Theme tokens",
+      "description": "Baseline color and radius tokens these components read. Skip this if the project already has shadcn tokens defined \u2014 the components use the same names.",
+      "categories": [
+        "foundation"
+      ],
+      "cssVars": {
+        "theme": {
+          "radius": "var(--radius)"
+        },
+        "light": {
+          "background": "#f5faff",
+          "foreground": "#001122",
+          "card": "#ffffff",
+          "card-foreground": "#001122",
+          "popover": "#ffffff",
+          "popover-foreground": "#001122",
+          "primary": "#15479c",
+          "primary-foreground": "#f5faff",
+          "secondary": "#eaf2fa",
+          "secondary-foreground": "#001122",
+          "muted": "#e8f0f8",
+          "muted-foreground": "#4a5a6c",
+          "accent": "#a8cce8",
+          "accent-foreground": "#001122",
+          "destructive": "#dc2626",
+          "destructive-foreground": "#ffffff",
+          "border": "#dbe6f0",
+          "input": "#dbe6f0",
+          "ring": "#15479c",
+          "radius": "0.625rem"
+        },
+        "dark": {
+          "background": "#06101c",
+          "foreground": "#e8f1fa",
+          "card": "#0b1826",
+          "card-foreground": "#e8f1fa",
+          "popover": "#0b1826",
+          "popover-foreground": "#e8f1fa",
+          "primary": "#4d7fd1",
+          "primary-foreground": "#06101c",
+          "secondary": "#14243a",
+          "secondary-foreground": "#e8f1fa",
+          "muted": "#14243a",
+          "muted-foreground": "#8aa2ba",
+          "accent": "#1d3a5c",
+          "accent-foreground": "#e8f1fa",
+          "destructive": "#ef4444",
+          "destructive-foreground": "#ffffff",
+          "border": "#1c3049",
+          "input": "#1c3049",
+          "ring": "#4d7fd1"
+        }
+      }
+    },
+    {
+      "name": "guide-section-structure",
+      "type": "registry:file",
+      "title": "Section structure",
+      "description": "How to lay out a section: wrapper, content container, the header block (tag pill, animated title, description, buttons), and hero layouts.",
+      "categories": [
+        "guide"
+      ],
+      "files": [
+        {
+          "path": "docs/patterns/01-section-structure.md",
+          "type": "registry:file",
+          "target": "docs/patterns/01-section-structure.md"
+        }
+      ]
+    },
+    {
+      "name": "guide-props",
+      "type": "registry:file",
+      "title": "Prop conventions",
+      "description": "Prop shapes and naming for section components: required order, the image/video discriminated union, icons as components, className merging.",
+      "categories": [
+        "guide"
+      ],
+      "files": [
+        {
+          "path": "docs/patterns/02-props.md",
+          "type": "registry:file",
+          "target": "docs/patterns/02-props.md"
+        }
+      ]
+    },
+    {
+      "name": "guide-styling",
+      "type": "registry:file",
+      "title": "Styling system",
+      "description": "Tokens, surfaces, radius, the responsive type scale, spacing ladders, class-order grammar, and what never to use.",
+      "categories": [
+        "guide"
+      ],
+      "files": [
+        {
+          "path": "docs/patterns/03-styling.md",
+          "type": "registry:file",
+          "target": "docs/patterns/03-styling.md"
+        }
+      ]
+    },
+    {
+      "name": "guide-responsiveness",
+      "type": "registry:file",
+      "title": "Responsive strategy",
+      "description": "One layout switch at md, the padding ladders, width fractions, GridOrCarousel's auto-layout contract, marquees, and mobile hover fallbacks.",
+      "categories": [
+        "guide"
+      ],
+      "files": [
+        {
+          "path": "docs/patterns/04-responsiveness.md",
+          "type": "registry:file",
+          "target": "docs/patterns/04-responsiveness.md"
+        }
+      ]
+    },
+    {
+      "name": "guide-animation",
+      "type": "registry:file",
+      "title": "Animation layers",
+      "description": "The four animation layers with exact values: WordByWordReveal for headings, AppearOnScroll for bodies, inline motion recipes, scroll-driven effects, GSAP.",
+      "categories": [
+        "guide"
+      ],
+      "files": [
+        {
+          "path": "docs/patterns/05-animation.md",
+          "type": "registry:file",
+          "target": "docs/patterns/05-animation.md"
+        }
+      ]
+    },
+    {
+      "name": "guide-cards",
+      "type": "registry:file",
+      "title": "Card and block anatomies",
+      "description": "Copy-paste markup for cards, hover reveals, overlay panels, icon chips, check rows, price blocks, author blocks, accordions, and forms.",
+      "categories": [
+        "guide"
+      ],
+      "files": [
+        {
+          "path": "docs/patterns/06-cards-and-blocks.md",
+          "type": "registry:file",
+          "target": "docs/patterns/06-cards-and-blocks.md"
+        }
+      ]
+    },
+    {
+      "name": "styles-color-themes",
+      "type": "registry:file",
+      "title": "Color themes",
+      "description": "45 ready palettes (25 light, 20 dark) in shadcn token names, plus how the derived tokens are computed.",
+      "categories": [
+        "styles"
+      ],
+      "files": [
+        {
+          "path": "docs/styles/color-themes.md",
+          "type": "registry:file",
+          "target": "docs/styles/color-themes.md"
+        }
+      ]
+    },
+    {
+      "name": "styles-fonts",
+      "type": "registry:file",
+      "title": "Font themes",
+      "description": "19 single fonts and 13 pairings, with CSS-import and next/font forms, plus pairing rules.",
+      "categories": [
+        "styles"
+      ],
+      "files": [
+        {
+          "path": "docs/styles/font-themes.md",
+          "type": "registry:file",
+          "target": "docs/styles/font-themes.md"
+        }
+      ]
+    },
+    {
+      "name": "styles-cards",
+      "type": "registry:file",
+      "title": "Card styles",
+      "description": "14 card surface treatments as drop-in CSS: glass, layered gradient, inner glow, soft shadow, inset, and more.",
+      "categories": [
+        "styles"
+      ],
+      "files": [
+        {
+          "path": "docs/styles/card-styles.md",
+          "type": "registry:file",
+          "target": "docs/styles/card-styles.md"
+        }
+      ]
+    },
+    {
+      "name": "styles-buttons",
+      "type": "registry:file",
+      "title": "Button styles",
+      "description": "23 primary and 4 secondary button treatments as drop-in CSS: gradient, metallic, glow, glass shimmer, inset border, and more.",
+      "categories": [
+        "styles"
+      ],
+      "files": [
+        {
+          "path": "docs/styles/button-styles.md",
+          "type": "registry:file",
+          "target": "docs/styles/button-styles.md"
+        }
+      ]
+    },
+    {
+      "name": "styles-packs",
+      "type": "registry:file",
+      "title": "Style packs",
+      "description": "11 curated combinations pairing a card treatment, primary and secondary button, radius, and font that were designed together.",
+      "categories": [
+        "styles"
+      ],
+      "files": [
+        {
+          "path": "docs/styles/style-packs.md",
+          "type": "registry:file",
+          "target": "docs/styles/style-packs.md"
+        }
+      ]
+    },
+    {
+      "name": "data-color-themes",
+      "type": "registry:file",
+      "title": "Color themes (JSON)",
+      "description": "All 45 palettes as structured data, keyed light/dark by theme name, each a complete set of 19 shadcn tokens. Use this to list or apply a palette programmatically; colorThemes.md is the same data written for reading.",
+      "categories": [
+        "styles"
+      ],
+      "files": [
+        {
+          "path": "colorThemes.json",
+          "type": "registry:file",
+          "target": "colorThemes.json"
+        }
+      ]
+    },
+    {
+      "name": "data-surface-styles",
+      "type": "registry:file",
+      "title": "Card and button styles (JSON)",
+      "description": "All 14 card, 23 primary-button and 4 secondary-button treatments as structured data, each with its CSS body and a one-line description. Use this to list or apply a surface treatment programmatically.",
+      "categories": [
+        "styles"
+      ],
+      "files": [
+        {
+          "path": "cssOptions.json",
+          "type": "registry:file",
+          "target": "cssOptions.json"
+        }
+      ]
+    },
+    {
+      "name": "auto-fill-text",
+      "type": "registry:ui",
+      "title": "AutoFillText",
+      "description": "Animation section.",
+      "categories": [
+        "animation"
+      ],
+      "props": "children, className?, paddingY?",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/animation/AutoFillText.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/AutoFillText.tsx"
+        }
+      ]
+    },
+    {
+      "name": "loop-carousel",
+      "type": "registry:ui",
+      "title": "LoopCarousel",
+      "description": "Animation section with carousel.",
+      "categories": [
+        "animation"
+      ],
+      "props": "children",
+      "dependencies": [
+        "clsx",
+        "embla-carousel",
+        "embla-carousel-react",
+        "lucide-react",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/animation/LoopCarousel.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/LoopCarousel.tsx"
+        }
+      ]
+    },
+    {
+      "name": "transition",
+      "type": "registry:ui",
+      "title": "Transition",
+      "description": "Animation section.",
+      "categories": [
+        "animation"
+      ],
+      "props": "children, className?, transitionType?, whileInView?",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "src/components/animation/Transition.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/Transition.tsx"
+        }
+      ]
+    },
+    {
+      "name": "accordion",
+      "type": "registry:ui",
+      "title": "Accordion",
+      "description": "Display section with accordion.",
+      "categories": [
+        "display"
+      ],
+      "props": "items, className?",
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "motion",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/display/Accordion.tsx",
+          "type": "registry:ui",
+          "target": "components/display/Accordion.tsx"
+        }
+      ]
+    },
+    {
+      "name": "active-badge",
+      "type": "registry:ui",
+      "title": "ActiveBadge",
+      "description": "Display section.",
+      "categories": [
+        "display"
+      ],
+      "props": "text, className?",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/display/ActiveBadge.tsx",
+          "type": "registry:ui",
+          "target": "components/display/ActiveBadge.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-group",
+      "type": "registry:ui",
+      "title": "AvatarGroup",
+      "description": "Display section with image media.",
+      "categories": [
+        "display"
+      ],
+      "props": "avatarsSrc, max?, size?, label?, labelClassName?, className?",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/display/AvatarGroup.tsx",
+          "type": "registry:ui",
+          "target": "components/display/AvatarGroup.tsx"
+        }
+      ]
+    },
+    {
+      "name": "animated-bar-chart",
+      "type": "registry:ui",
+      "title": "AnimatedBarChart",
+      "description": "Bento widget: bar chart whose bars grow and reshuffle on hover.",
+      "categories": [
+        "display"
+      ],
+      "props": "",
+      "files": [
+        {
+          "path": "src/components/display/AnimatedBarChart.tsx",
+          "type": "registry:ui",
+          "target": "components/display/AnimatedBarChart.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "chat-marquee",
+      "type": "registry:ui",
+      "title": "ChatMarquee",
+      "description": "Bento widget: chat bubbles scrolling vertically in a faded column.",
+      "categories": [
+        "display"
+      ],
+      "props": "aiIcon, userIcon, exchanges, placeholder",
+      "files": [
+        {
+          "path": "src/components/display/ChatMarquee.tsx",
+          "type": "registry:ui",
+          "target": "components/display/ChatMarquee.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "checklist-timeline",
+      "type": "registry:ui",
+      "title": "ChecklistTimeline",
+      "description": "Bento widget: checklist rows over concentric rings, faded top and bottom.",
+      "categories": [
+        "display"
+      ],
+      "props": "heading, subheading, items, completedLabel",
+      "files": [
+        {
+          "path": "src/components/display/ChecklistTimeline.tsx",
+          "type": "registry:ui",
+          "target": "components/display/ChecklistTimeline.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "icon-text-marquee",
+      "type": "registry:ui",
+      "title": "IconTextMarquee",
+      "description": "Bento widget: rows of icon + label chips scrolling horizontally.",
+      "categories": [
+        "display"
+      ],
+      "props": "centerIcon, texts",
+      "files": [
+        {
+          "path": "src/components/display/IconTextMarquee.tsx",
+          "type": "registry:ui",
+          "target": "components/display/IconTextMarquee.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "info-card-marquee",
+      "type": "registry:ui",
+      "title": "InfoCardMarquee",
+      "description": "Bento widget: icon/label/value cards scrolling vertically.",
+      "categories": [
+        "display"
+      ],
+      "props": "items",
+      "files": [
+        {
+          "path": "src/components/display/InfoCardMarquee.tsx",
+          "type": "registry:ui",
+          "target": "components/display/InfoCardMarquee.tsx"
+        }
+      ],
+      "dependencies": [
+        "lucide-react"
+      ]
+    },
+    {
+      "name": "media-stack",
+      "type": "registry:ui",
+      "title": "MediaStack",
+      "description": "Bento widget: three stacked images that fan out on hover.",
+      "categories": [
+        "display"
+      ],
+      "props": "items",
+      "files": [
+        {
+          "path": "src/components/display/MediaStack.tsx",
+          "type": "registry:ui",
+          "target": "components/display/MediaStack.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "orbiting-icons",
+      "type": "registry:ui",
+      "title": "OrbitingIcons",
+      "description": "Bento widget: icons orbiting a center on concentric rings.",
+      "categories": [
+        "display"
+      ],
+      "props": "centerIcon, items",
+      "files": [
+        {
+          "path": "src/components/display/OrbitingIcons.tsx",
+          "type": "registry:ui",
+          "target": "components/display/OrbitingIcons.tsx"
+        }
+      ],
+      "dependencies": [
+        "lucide-react"
+      ]
+    },
+    {
+      "name": "tilted-stack-cards",
+      "type": "registry:ui",
+      "title": "TiltedStackCards",
+      "description": "Bento widget: skewed cards stacked in depth that spread apart on hover.",
+      "categories": [
+        "display"
+      ],
+      "props": "items",
+      "files": [
+        {
+          "path": "src/components/display/TiltedStackCards.tsx",
+          "type": "registry:ui",
+          "target": "components/display/TiltedStackCards.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "parallax-image",
+      "type": "registry:ui",
+      "title": "ParallaxImage",
+      "description": "Image (or muted autoplay video, via videoSrc) that scales down as it scrolls through view. Fills its nearest positioned ancestor, which must clip.",
+      "categories": [
+        "animation"
+      ],
+      "props": "src?, videoSrc?, alt?, className?, zoom?",
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "src/components/animation/ParallaxImage.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/ParallaxImage.tsx"
+        }
+      ]
+    },
+    {
+      "name": "weight-shifting-heading",
+      "type": "registry:ui",
+      "title": "WeightShiftingHeading",
+      "description": "Heading whose letters get bolder as the cursor comes near and lighter as it moves away.",
+      "categories": [
+        "animation"
+      ],
+      "props": "title, min?, max?, radius?, className?",
+      "files": [
+        {
+          "path": "src/components/animation/WeightShiftingHeading.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/WeightShiftingHeading.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "gsap",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "letter-color-wave",
+      "type": "registry:ui",
+      "title": "LetterColorWave",
+      "description": "Heading that lights up letter by letter as you scroll, each letter flashing the primary color before settling.",
+      "categories": [
+        "animation"
+      ],
+      "props": "title, className?",
+      "files": [
+        {
+          "path": "src/components/animation/LetterColorWave.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/LetterColorWave.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "gsap",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "card-wheel-slider",
+      "type": "registry:ui",
+      "title": "CardWheelSlider",
+      "description": "Cards fanned along a wide arc that swing into place when you drag, or with prev/next buttons and dots.",
+      "categories": [
+        "animation"
+      ],
+      "props": "items, className?",
+      "files": [
+        {
+          "path": "src/components/animation/CardWheelSlider.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/CardWheelSlider.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "gsap",
+        "lucide-react",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "spiral-card-column",
+      "type": "registry:ui",
+      "title": "SpiralCardColumn",
+      "description": "A spiral of cards that keeps turning on its own and speeds up when you scroll or drag.",
+      "categories": [
+        "animation"
+      ],
+      "props": "items, className?",
+      "files": [
+        {
+          "path": "src/components/animation/SpiralCardColumn.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/SpiralCardColumn.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "gsap",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "card-shuffle-loop",
+      "type": "registry:ui",
+      "title": "CardShuffleLoop",
+      "description": "Image tiles that take turns stepping forward from the back, pausing while you hover.",
+      "categories": [
+        "animation"
+      ],
+      "props": "items",
+      "files": [
+        {
+          "path": "src/components/animation/CardShuffleLoop.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/CardShuffleLoop.tsx"
+        }
+      ],
+      "dependencies": [
+        "gsap",
+        "lucide-react"
+      ]
+    },
+    {
+      "name": "endless-image-wall",
+      "type": "registry:ui",
+      "title": "EndlessImageWall",
+      "description": "An endless wall of images you can drag or scroll in any direction, gliding smoothly and wrapping around forever.",
+      "categories": [
+        "animation"
+      ],
+      "props": "items, captureScroll?, className?",
+      "files": [
+        {
+          "path": "src/components/animation/EndlessImageWall.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/EndlessImageWall.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "gsap",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "expanding-panel-slider",
+      "type": "registry:ui",
+      "title": "ExpandingPanelSlider",
+      "description": "A row of image cards where the selected card opens wide and the rest slim down beside it, with its title fading in once it settles.",
+      "categories": [
+        "animation"
+      ],
+      "props": "items",
+      "files": [
+        {
+          "path": "src/components/animation/ExpandingPanelSlider.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/ExpandingPanelSlider.tsx"
+        }
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ]
+    },
+    {
+      "name": "cursor-photo-trail",
+      "type": "registry:ui",
+      "title": "CursorPhotoTrail",
+      "description": "Images pop up along the cursor path and fade away, like a trail of photos following the mouse.",
+      "categories": [
+        "animation"
+      ],
+      "props": "items, className?",
+      "files": [
+        {
+          "path": "src/components/animation/CursorPhotoTrail.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/CursorPhotoTrail.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "gsap",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "cursor-spinning-photos",
+      "type": "registry:ui",
+      "title": "CursorSpinningPhotos",
+      "description": "Photos spin into view along the cursor path, then twirl and shrink away.",
+      "categories": [
+        "animation"
+      ],
+      "props": "items, className?",
+      "files": [
+        {
+          "path": "src/components/animation/CursorSpinningPhotos.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/CursorSpinningPhotos.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "gsap",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "arched-scrolling-text",
+      "type": "registry:ui",
+      "title": "ArchedScrollingText",
+      "description": "Big text that loops endlessly along a curved arc, with an accent-colored separator.",
+      "categories": [
+        "animation"
+      ],
+      "props": "text, separator?, speed?, curve?, className?",
+      "files": [
+        {
+          "path": "src/components/animation/ArchedScrollingText.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/ArchedScrollingText.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "project-rows-preview",
+      "type": "registry:ui",
+      "title": "ProjectRowsPreview",
+      "description": "A project list where hovering a row shows its image in a floating preview that follows the cursor and slides between projects.",
+      "categories": [
+        "animation"
+      ],
+      "props": "items, headers?, className?",
+      "files": [
+        {
+          "path": "src/components/animation/ProjectRowsPreview.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/ProjectRowsPreview.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "gsap",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "word-swap-headline",
+      "type": "registry:ui",
+      "title": "WordSwapHeadline",
+      "description": "Sentence with one highlighted word that swaps in a loop, sliding up while the gap resizes to fit.",
+      "categories": [
+        "animation"
+      ],
+      "props": "before?, words, after?, interval?, className?",
+      "files": [
+        {
+          "path": "src/components/animation/WordSwapHeadline.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/WordSwapHeadline.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "spinning-photo-ring",
+      "type": "registry:ui",
+      "title": "SpinningPhotoRing",
+      "description": "A ring of images that spins in 3D, reacts to scrolling and can be dragged.",
+      "categories": [
+        "animation"
+      ],
+      "props": "items",
+      "files": [
+        {
+          "path": "src/components/animation/SpinningPhotoRing.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/SpinningPhotoRing.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "gsap",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "logo-grid-swap",
+      "type": "registry:ui",
+      "title": "LogoGridSwap",
+      "description": "A grid of brand names where one tile at a time swaps its name out for another with a smooth slide.",
+      "categories": [
+        "animation"
+      ],
+      "props": "names",
+      "files": [
+        {
+          "path": "src/components/animation/LogoGridSwap.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/LogoGridSwap.tsx"
+        }
+      ],
+      "dependencies": [
+        "motion"
+      ]
+    },
+    {
+      "name": "photo-tunnel-on-scroll",
+      "type": "registry:ui",
+      "title": "PhotoTunnelOnScroll",
+      "description": "A pinned scroll section that flies you forward through a tunnel of floating photos, ending on a centred headline.",
+      "categories": [
+        "animation"
+      ],
+      "props": "items, title?, className?",
+      "files": [
+        {
+          "path": "src/components/animation/PhotoTunnelOnScroll.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/PhotoTunnelOnScroll.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "gsap",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "warping-video-player",
+      "type": "registry:ui",
+      "title": "WarpingVideoPlayer",
+      "description": "A video block that grows from the centre as you scroll, warping like cloth before settling into a full rounded frame, with a play button, pause toggle and draggable progress bar.",
+      "categories": [
+        "animation"
+      ],
+      "props": "videoSrc, posterSrc?, className?",
+      "files": [
+        {
+          "path": "src/components/animation/WarpingVideoPlayer.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/WarpingVideoPlayer.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "gsap",
+        "lucide-react",
+        "motion",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "swipe-card-deck",
+      "type": "registry:ui",
+      "title": "SwipeCardDeck",
+      "description": "A stack of tilted cards where the front card slides out to the side and tucks behind the pile as the next one comes forward, with arrows and swipe.",
+      "categories": [
+        "animation"
+      ],
+      "props": "items, className?",
+      "files": [
+        {
+          "path": "src/components/animation/SwipeCardDeck.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/SwipeCardDeck.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "gsap",
+        "lucide-react",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "dissolving-dot-image",
+      "type": "registry:ui",
+      "title": "DissolvingDotImage",
+      "description": "An image made of thousands of fine dots that dissolve into loose, drifting grains around the cursor and settle back, flying together into the picture when it scrolls into view.",
+      "categories": [
+        "animation"
+      ],
+      "props": "imageSrc, dotSize?, gap?, radius?, className?",
+      "files": [
+        {
+          "path": "src/components/animation/DissolvingDotImage.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/DissolvingDotImage.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "morphing-particle-words",
+      "type": "registry:ui",
+      "title": "MorphingParticleWords",
+      "description": "A word made of thousands of particles that fly apart and re-form into the next word, scattering away from the cursor as you move over it.",
+      "categories": [
+        "animation"
+      ],
+      "props": "words, interval?, className?",
+      "files": [
+        {
+          "path": "src/components/animation/MorphingParticleWords.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/MorphingParticleWords.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "velocity-text-rows",
+      "type": "registry:ui",
+      "title": "VelocityTextRows",
+      "description": "Rows of giant text that loop sideways in opposite directions, speeding up, reversing and leaning with your scroll.",
+      "categories": [
+        "animation"
+      ],
+      "props": "rows, speed?, className?",
+      "files": [
+        {
+          "path": "src/components/animation/VelocityTextRows.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/VelocityTextRows.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "gsap",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "throwable-tag-pile",
+      "type": "registry:ui",
+      "title": "ThrowableTagPile",
+      "description": "Tags drop in with gravity and settle into a pile you can grab, toss and knock around.",
+      "categories": [
+        "animation"
+      ],
+      "props": "tags, className?",
+      "files": [
+        {
+          "path": "src/components/animation/ThrowableTagPile.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/ThrowableTagPile.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "bending-line-grid",
+      "type": "registry:ui",
+      "title": "BendingLineGrid",
+      "description": "A grid of thin lines that bends toward the cursor like a gravity well, glowing where it's pulled, behind your content.",
+      "categories": [
+        "animation"
+      ],
+      "props": "children?, className?",
+      "files": [
+        {
+          "path": "src/components/animation/BendingLineGrid.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/BendingLineGrid.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "confetti-burst",
+      "type": "registry:ui",
+      "title": "ConfettiBurst",
+      "description": "Wraps any element and bursts theme-coloured confetti from it on click, hover or when it scrolls into view.",
+      "categories": [
+        "animation"
+      ],
+      "props": "children, as?, trigger?, count?, spread?, power?, shapes?, colors?, className?, ref?",
+      "files": [
+        {
+          "path": "src/components/animation/ConfettiBurst.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/ConfettiBurst.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "spreading-card-stack",
+      "type": "registry:ui",
+      "title": "SpreadingCardStack",
+      "description": "A messy stack of cards that fans out into a neat grid as it scrolls into view, and stacks back up when you scroll back.",
+      "categories": [
+        "animation"
+      ],
+      "props": "items, className?",
+      "files": [
+        {
+          "path": "src/components/animation/SpreadingCardStack.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/SpreadingCardStack.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "gsap",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "lanyard-badge",
+      "type": "registry:ui",
+      "title": "LanyardBadge",
+      "description": "An event-pass style badge hanging from a strap that swings on its own, can be grabbed and thrown around, and settles back with a natural sway.",
+      "categories": [
+        "animation"
+      ],
+      "props": "imageSrc?, title?, description?, label?, tag?, code?, strapText?, children?, className?",
+      "files": [
+        {
+          "path": "src/components/animation/LanyardBadge.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/LanyardBadge.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "throwable-photo-stack",
+      "type": "registry:ui",
+      "title": "ThrowablePhotoStack",
+      "description": "A messy pile of polaroid photos you can grab, lift, throw and spin across the table, each landing with a soft shadow.",
+      "categories": [
+        "animation"
+      ],
+      "props": "items, cursorLabel?, className?",
+      "files": [
+        {
+          "path": "src/components/animation/ThrowablePhotoStack.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/ThrowablePhotoStack.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "slide-over-sections",
+      "type": "registry:ui",
+      "title": "SlideOverSections",
+      "description": "Stacks two sections on scroll: the under section scrolls until its bottom reaches the bottom of the screen, then pins while the over section slides up across it, and the pinned one shrinks slightly and darkens (shrink and shade set how much) as it is covered, so even same-colored sections read as layers. Tall under sections are shown in full before they pin.",
+      "categories": [
+        "animation"
+      ],
+      "props": "under, over, shrink?, shade?, className?, overClassName?",
+      "files": [
+        {
+          "path": "src/components/animation/SlideOverSections.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/SlideOverSections.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "gradient-word-reveal",
+      "type": "registry:ui",
+      "title": "GradientWordReveal",
+      "description": "Word-by-word text reveal like WordByWordReveal (slide-up, fade-blur or fade, staggered as it scrolls into view), with the text painted in one continuous left-to-right gradient from the foreground colour into the same colour at 45% opacity, echoing a two-tone title. Each word carries its own slice of a gradient sized to the whole text block, so the gradient stays seamless across words and lines and every word stays visible while it animates.",
+      "categories": [
+        "animation"
+      ],
+      "props": "text, variant, tag?, className?, immediate?",
+      "files": [
+        {
+          "path": "src/components/animation/GradientWordReveal.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/GradientWordReveal.tsx"
+        }
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "stagger-text",
+      "type": "registry:ui",
+      "title": "StaggerText",
+      "description": "The ButtonStagger hover label on its own, to drop inside any existing link or button: on hover of that link or button (desktop), each letter slides up in quick succession to reveal a copy of itself from below.",
+      "categories": [
+        "animation"
+      ],
+      "props": "text",
+      "files": [
+        {
+          "path": "src/components/animation/StaggerText.tsx",
+          "type": "registry:ui",
+          "target": "components/animation/StaggerText.tsx"
+        }
+      ]
+    },
+    {
+      "name": "loader-progress",
+      "type": "registry:ui",
+      "title": "LoaderProgress",
+      "description": "Fullscreen intro loader: an avatar (imageSrc) and a name (title) that fills in left to right sit above a progress bar, then the panel wipes up to reveal the page. Calls onComplete when done.",
+      "categories": [
+        "loaders"
+      ],
+      "props": "imageSrc, title, onComplete?",
+      "files": [
+        {
+          "path": "src/components/loaders/LoaderProgress.tsx",
+          "type": "registry:ui",
+          "target": "components/loaders/LoaderProgress.tsx"
+        }
+      ],
+      "dependencies": [
+        "motion"
+      ]
+    },
+    {
+      "name": "loader-spinner",
+      "type": "registry:ui",
+      "title": "LoaderSpinner",
+      "description": "Fullscreen intro loader: a shape (imageSrc, e.g. an SVG star, used as a mask in the theme's background color) fades in once loaded and spins on a foreground-colored screen, then shrinks away and the loader fades out. Calls onComplete when done.",
+      "categories": [
+        "loaders"
+      ],
+      "props": "imageSrc, duration?, onComplete?",
+      "files": [
+        {
+          "path": "src/components/loaders/LoaderSpinner.tsx",
+          "type": "registry:ui",
+          "target": "components/loaders/LoaderSpinner.tsx"
+        }
+      ],
+      "dependencies": [
+        "motion"
+      ]
+    },
+    {
+      "name": "loader-pixel-wipe",
+      "type": "registry:ui",
+      "title": "LoaderPixelWipe",
+      "description": "Fullscreen intro loader: a grid of square pixels clears line by line across the screen (top to bottom on portrait), each line's pixels fading out in random order. Calls onComplete when done.",
+      "categories": [
+        "loaders"
+      ],
+      "files": [
+        {
+          "path": "src/components/loaders/LoaderPixelWipe.tsx",
+          "type": "registry:ui",
+          "target": "components/loaders/LoaderPixelWipe.tsx"
+        }
+      ],
+      "props": "onComplete?",
+      "dependencies": [
+        "motion"
+      ]
+    },
+    {
+      "name": "loader-shutter",
+      "type": "registry:ui",
+      "title": "LoaderShutter",
+      "description": "Fullscreen intro loader: ten horizontal shutters collapse upward one after another from the bottom, revealing the page. Calls onComplete when done.",
+      "categories": [
+        "loaders"
+      ],
+      "files": [
+        {
+          "path": "src/components/loaders/LoaderShutter.tsx",
+          "type": "registry:ui",
+          "target": "components/loaders/LoaderShutter.tsx"
+        }
+      ],
+      "props": "onComplete?",
+      "dependencies": [
+        "motion"
+      ]
+    },
+    {
+      "name": "loader-cube",
+      "type": "registry:ui",
+      "title": "LoaderCube",
+      "description": "Fullscreen intro loader: the cover is the face of a 3D cube that pushes back and rotates away, revealing the page behind it. Calls onComplete when done.",
+      "categories": [
+        "loaders"
+      ],
+      "files": [
+        {
+          "path": "src/components/loaders/LoaderCube.tsx",
+          "type": "registry:ui",
+          "target": "components/loaders/LoaderCube.tsx"
+        }
+      ],
+      "props": "onComplete?",
+      "dependencies": [
+        "motion"
+      ]
+    },
+    {
+      "name": "loader-curve",
+      "type": "registry:ui",
+      "title": "LoaderCurve",
+      "description": "Fullscreen intro loader: the cover pulls up off the screen while its bottom edge bows into an arc. Calls onComplete when done.",
+      "categories": [
+        "loaders"
+      ],
+      "files": [
+        {
+          "path": "src/components/loaders/LoaderCurve.tsx",
+          "type": "registry:ui",
+          "target": "components/loaders/LoaderCurve.tsx"
+        }
+      ],
+      "props": "onComplete?",
+      "dependencies": [
+        "motion"
+      ]
+    },
+    {
+      "name": "loader-columns",
+      "type": "registry:ui",
+      "title": "LoaderColumns",
+      "description": "Fullscreen intro loader: five columns with hairline dividers slide down off the screen one after another. Calls onComplete when done.",
+      "categories": [
+        "loaders"
+      ],
+      "files": [
+        {
+          "path": "src/components/loaders/LoaderColumns.tsx",
+          "type": "registry:ui",
+          "target": "components/loaders/LoaderColumns.tsx"
+        }
+      ],
+      "props": "onComplete?",
+      "dependencies": [
+        "motion"
+      ]
+    },
+    {
+      "name": "loader-pixels",
+      "type": "registry:ui",
+      "title": "LoaderPixels",
+      "description": "Fullscreen intro loader: a responsive grid of square pixels (8 to 16 columns by screen size) dissolves in random order. Calls onComplete when done.",
+      "categories": [
+        "loaders"
+      ],
+      "files": [
+        {
+          "path": "src/components/loaders/LoaderPixels.tsx",
+          "type": "registry:ui",
+          "target": "components/loaders/LoaderPixels.tsx"
+        }
+      ],
+      "props": "onComplete?",
+      "dependencies": [
+        "motion"
+      ]
+    },
+    {
+      "name": "loader-words",
+      "type": "registry:ui",
+      "title": "LoaderWords",
+      "description": "Fullscreen intro loader: a dot and a word rise in, the word cycles through a list of greetings (words), then everything lifts away. Calls onComplete when done.",
+      "categories": [
+        "loaders"
+      ],
+      "files": [
+        {
+          "path": "src/components/loaders/LoaderWords.tsx",
+          "type": "registry:ui",
+          "target": "components/loaders/LoaderWords.tsx"
+        }
+      ],
+      "props": "words, onComplete?",
+      "dependencies": [
+        "motion"
+      ]
+    },
+    {
+      "name": "loader-counter",
+      "type": "registry:ui",
+      "title": "LoaderCounter",
+      "description": "Fullscreen intro loader: a centered NumberFlow counter rolls from 00 to 100 while a thin bar fills along the top, then the cover pulls up with an arced edge. Calls onComplete when done.",
+      "categories": [
+        "loaders"
+      ],
+      "files": [
+        {
+          "path": "src/components/loaders/LoaderCounter.tsx",
+          "type": "registry:ui",
+          "target": "components/loaders/LoaderCounter.tsx"
+        }
+      ],
+      "props": "duration?, onComplete?",
+      "dependencies": [
+        "@number-flow/react",
+        "motion"
+      ]
+    },
+    {
+      "name": "loader-percent",
+      "type": "registry:ui",
+      "title": "LoaderPercent",
+      "description": "Fullscreen intro loader: large NumberFlow digits with a matching % roll from 0 to 100 in the bottom-left corner beside a thin vertical progress bar, then the cover pulls up with an arced edge. Calls onComplete when done.",
+      "categories": [
+        "loaders"
+      ],
+      "files": [
+        {
+          "path": "src/components/loaders/LoaderPercent.tsx",
+          "type": "registry:ui",
+          "target": "components/loaders/LoaderPercent.tsx"
+        }
+      ],
+      "props": "duration?, onComplete?",
+      "dependencies": [
+        "@number-flow/react",
+        "motion"
+      ]
+    },
+    {
+      "name": "loader-tiles",
+      "type": "registry:ui",
+      "title": "LoaderTiles",
+      "description": "Fullscreen intro loader: a grid of square tiles (10 columns, 5 on mobile) shrinks away, rippling outward from the center. Calls onComplete when done.",
+      "categories": [
+        "loaders"
+      ],
+      "props": "onComplete?",
+      "files": [
+        {
+          "path": "src/components/loaders/LoaderTiles.tsx",
+          "type": "registry:ui",
+          "target": "components/loaders/LoaderTiles.tsx"
+        }
+      ],
+      "dependencies": [
+        "motion"
+      ]
+    },
+    {
+      "name": "loader-letters",
+      "type": "registry:ui",
+      "title": "LoaderLetters",
+      "description": "Fullscreen intro loader: a word (title) rises in letter by letter, the letters lift away, then the cover pulls up. Calls onComplete when done.",
+      "categories": [
+        "loaders"
+      ],
+      "props": "title, onComplete?",
+      "files": [
+        {
+          "path": "src/components/loaders/LoaderLetters.tsx",
+          "type": "registry:ui",
+          "target": "components/loaders/LoaderLetters.tsx"
+        }
+      ],
+      "dependencies": [
+        "motion"
+      ]
+    },
+    {
+      "name": "loader-circle",
+      "type": "registry:ui",
+      "title": "LoaderCircle",
+      "description": "Fullscreen intro loader: a circular hole opens at the center of the cover and widens until the whole page is revealed. Calls onComplete when done.",
+      "categories": [
+        "loaders"
+      ],
+      "props": "onComplete?",
+      "files": [
+        {
+          "path": "src/components/loaders/LoaderCircle.tsx",
+          "type": "registry:ui",
+          "target": "components/loaders/LoaderCircle.tsx"
+        }
+      ],
+      "dependencies": [
+        "motion"
+      ]
+    }
+  ]
+}

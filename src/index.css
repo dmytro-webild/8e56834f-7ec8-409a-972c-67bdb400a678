@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+@import "./styles/animations.css";
+@import "./styles/masks.css";
+
+@theme {
+  --breakpoint-lg: 55rem;
+}
+
+/* webild:theme-ai */
+:root {
+  --primary-cta: #2563eb;
+  --primary-cta-text: #f4f4f9;
+  --secondary-cta: #171719;
+  --secondary-cta-text: #ffffff;
+  --background-accent: #2563eb;
+
+  --background: #0c0c0e;
+  --foreground: #ffffff;
+  --card: #121214;
+  --card-foreground: var(--foreground);
+  --popover: var(--card);
+  --popover-foreground: var(--foreground);
+  --primary: var(--primary-cta);
+  --primary-foreground: var(--primary-cta-text);
+  --secondary: var(--secondary-cta);
+  --secondary-foreground: var(--secondary-cta-text);
+  --muted: #171719;
+  --muted-foreground: #959594;
+  --accent: var(--background-accent);
+  --accent-foreground: #ffffff;
+  --deep: #030409;
+  --deep-foreground: #ffffff;
+  --destructive: #f87171;
+  --destructive-foreground: #0c0c0e;
+  --border: #212123;
+  --input: #212123;
+  --ring: var(--primary-cta);
+
+  --font-heading: "Unbounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-body: "Plus Jakarta Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-label: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-accent: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --heading-weight: 500;
+  --heading-tracking: -0.04em;
+  --heading-leading: 1.06;
+  --text-display: clamp(2.75rem, 1.9rem + 3.6vw, 5rem);
+  --text-h1: clamp(2.125rem, 1.6rem + 2.2vw, 3.75rem);
+  --text-h2: clamp(1.5rem, 1.3rem + 0.9vw, 2.125rem);
+  --text-h3: clamp(1.125rem, 1.06rem + 0.3vw, 1.375rem);
+  --text-body-lg: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+  --text-body: 0.9375rem;
+  --text-small: 0.875rem;
+  --text-label: 0.8125rem;
+  --label-tracking: 0em;
+  --label-case: none;
+
+  --gutter: clamp(1rem, 0.4rem + 2.2vw, 2.5rem);
+  --max-w: 1280px;
+  --container: min(100% - 2 * var(--gutter), var(--max-w));
+  --section-space: clamp(4.5rem, 3.4rem + 4vw, 8rem);
+  --gap: clamp(0.75rem, 0.6rem + 0.5vw, 1.125rem);
+  --grid-columns: 12;
+
+  --radius: 0.75rem;
+  --radius-card: 1rem;
+  --radius-button: 0.625rem;
+  --radius-image: 0.875rem;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 0.3s;
+  --dur-base: 0.65s;
+  --dur-slow: 1.05s;
+  --reveal-distance: 1.5rem;
+
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-deep: var(--deep);
+  --color-deep-foreground: var(--deep-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-label);
+  --font-serif: var(--font-accent);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+    outline-color: color-mix(in srgb, var(--color-ring) 40%, transparent);
+  }
+
+  html {
+    background-color: var(--background);
+  }
+
+  ::selection {
+    background: var(--accent);
+    color: var(--accent-foreground);
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: "Plus Jakarta Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Unbounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: var(--heading-weight);
+    letter-spacing: var(--heading-tracking);
+    line-height: var(--heading-leading);
+  }
+}
+
+@layer components {
+  .btn-primary,
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 2.75rem;
+    padding: 0 1.25rem;
+    border-radius: var(--radius-button);
+    font-family: var(--font-body);
+    font-size: var(--text-small);
+    font-weight: 500;
+    line-height: 1.2;
+    white-space: nowrap;
+    cursor: pointer;
+    transition:
+      background-color var(--dur-fast) var(--ease-out),
+      color var(--dur-fast) var(--ease-out),
+      border-color var(--dur-fast) var(--ease-out);
+  }
+
+  .btn-primary {
+    background: var(--primary);
+    color: var(--primary-foreground);
+    border: 1px solid var(--primary);
+  }
+
+  .btn-primary:hover,
+  .btn-primary:focus-visible {
+    background: color-mix(in srgb, var(--primary) 88%, var(--background));
+    outline: none;
+  }
+
+  .btn-secondary {
+    background: var(--secondary);
+    color: var(--secondary-foreground);
+    border: 1px solid color-mix(in srgb, var(--foreground) 10%, transparent);
+  }
+
+  .btn-secondary:hover,
+  .btn-secondary:focus-visible {
+    background: color-mix(in srgb, var(--foreground) 7%, var(--secondary));
+    outline: none;
+  }
+
+  [data-button="pill"] .btn-primary,
+  [data-button="pill"] .btn-secondary {
+    border-radius: 999px;
+  }
+
+  .btn-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-body);
+    font-size: var(--text-small);
+    line-height: 1.2;
+    color: currentColor;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 0.25rem;
+    transition: background-size var(--dur-base) var(--ease-out);
+  }
+
+  .btn-link:hover,
+  .btn-link:focus-visible {
+    background-size: 100% 1px;
+    outline: none;
+  }
+
+  .card {
+    background: var(--card);
+    border: 1px solid color-mix(in srgb, var(--foreground) 8%, transparent);
+    box-shadow: none;
+  }
+
+  .kit-card {
+    background: var(--card);
+    color: var(--card-foreground);
+    border-radius: var(--radius-card);
+    box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--foreground) 7%, transparent);
+  }
+
+  [data-card="outline"] .kit-card {
+    background: transparent;
+  }
+
+  .kit-pattern {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  main:has(> .kit-pattern) {
+    position: relative;
+    isolation: isolate;
+  }
+
+  [data-pattern="grid"] .kit-pattern {
+    display: block;
+    background-image:
+      linear-gradient(color-mix(in srgb, var(--foreground) 4%, transparent) 1px, transparent 1px),
+      linear-gradient(90deg, color-mix(in srgb, var(--foreground) 4%, transparent) 1px, transparent 1px);
+    background-size: 4rem 4rem;
+    mask-image: radial-gradient(ellipse at 50% 0%, #000 0%, transparent 70%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-primary,
+  .btn-secondary,
+  .btn-link {
+    transition: none;
+  }
+}

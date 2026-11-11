@@ -1,0 +1,96 @@
+{
+  "singleFonts": {
+    "inter": {
+      "name": "Inter",
+      "import": "import { Inter } from \"next/font/google\";",
+      "initialization": "const inter = Inter({\n  variable: \"--font-inter\",\n  subsets: [\"latin\"],\n});",
+      "className": "${inter.variable}",
+      "cssVariable": "font-family: var(--font-inter), sans-serif;"
+    },
+    "interTight": {
+      "name": "Inter Tight",
+      "import": "import { Inter_Tight } from \"next/font/google\";",
+      "initialization": "const interTight = Inter_Tight({\n  variable: \"--font-inter-tight\",\n  subsets: [\"latin\"],\n  weight: [\"100\", \"200\", \"300\", \"400\", \"500\", \"600\", \"700\", \"800\", \"900\"],\n});",
+      "className": "${interTight.variable}",
+      "cssVariable": "font-family: var(--font-inter-tight), sans-serif;"
+    },
+    "poppins": {
+      "name": "Poppins",
+      "import": "import { Poppins } from \"next/font/google\";",
+      "initialization": "const poppins = Poppins({\n  variable: \"--font-poppins\",\n  subsets: [\"latin\"],\n  weight: [\"100\", \"200\", \"300\", \"400\", \"500\", \"600\", \"700\", \"800\", \"900\"],\n});",
+      "className": "${poppins.variable}",
+      "cssVariable": "font-family: var(--font-poppins), sans-serif;"
+    },
+    "dmSans": {
+      "name": "DM Sans",
+      "import": "import { DM_Sans } from \"next/font/google\";",
+      "initialization": "const dmSans = DM_Sans({\n  variable: \"--font-dm-sans\",\n  subsets: [\"latin\"],\n});",
+      "className": "${dmSans.variable}",
+      "cssVariable": "font-family: var(--font-dm-sans), sans-serif;"
+    },
+    "manrope": {
+      "name": "Manrope",
+      "import": "import { Manrope } from \"next/font/google\";",
+      "initialization": "const manrope = Manrope({\n  variable: \"--font-manrope\",\n  subsets: [\"latin\"],\n});",
+      "className": "${manrope.variable}",
+      "cssVariable": "font-family: var(--font-manrope), sans-serif;"
+    },
+    "openSans": {
+      "name": "Open Sans",
+      "import": "import { Open_Sans } from \"next/font/google\";",
+      "initialization": "const openSans = Open_Sans({\n  variable: \"--font-open-sans\",\n  subsets: [\"latin\"],\n});",
+      "className": "${openSans.variable}",
+      "cssVariable": "font-family: var(--font-open-sans), sans-serif;"
+    }
+  },
+  "fontPairings": {
+    "interOpenSans": {
+      "name": "Inter + Open Sans",
+      "description": "Neutral headings with friendly body. Clean and approachable.",
+      "headingFont": "inter",
+      "bodyFont": "openSans",
+      "imports": "import { Inter } from \"next/font/google\";\nimport { Open_Sans } from \"next/font/google\";",
+      "initializations": "const inter = Inter({\n  variable: \"--font-inter\",\n  subsets: [\"latin\"],\n});\n\nconst openSans = Open_Sans({\n  variable: \"--font-open-sans\",\n  subsets: [\"latin\"],\n});",
+      "classNames": "${inter.variable} ${openSans.variable}",
+      "globalsCss": {
+        "instructions": "Update the font-family property within the existing CSS rules in globals.css (@layer base section)",
+        "bodyRule": "body {\n  /* ... existing properties ... */\n  font-family: var(--font-open-sans), sans-serif;\n}",
+        "headingsRule": "h1, h2, h3, h4, h5, h6 {\n  font-family: var(--font-inter), sans-serif;\n}",
+        "bodyFontFamily": "var(--font-open-sans), sans-serif",
+        "headingsFontFamily": "var(--font-inter), sans-serif"
+      }
+    },
+    "dmSansInter": {
+      "name": "DM Sans + Inter",
+      "description": "Modern geometric headings with neutral body. Contemporary and clean.",
+      "headingFont": "dmSans",
+      "bodyFont": "inter",
+      "imports": "import { DM_Sans } from \"next/font/google\";\nimport { Inter } from \"next/font/google\";",
+      "initializations": "const dmSans = DM_Sans({\n  variable: \"--font-dm-sans\",\n  subsets: [\"latin\"],\n});\n\nconst inter = Inter({\n  variable: \"--font-inter\",\n  subsets: [\"latin\"],\n});",
+      "classNames": "${dmSans.variable} ${inter.variable}",
+      "globalsCss": {
+        "instructions": "Update the font-family property within the existing CSS rules in globals.css (@layer base section)",
+        "bodyRule": "body {\n  /* ... existing properties ... */\n  font-family: var(--font-inter), sans-serif;\n}",
+        "headingsRule": "h1, h2, h3, h4, h5, h6 {\n  font-family: var(--font-dm-sans), sans-serif;\n}",
+        "bodyFontFamily": "var(--font-inter), sans-serif",
+        "headingsFontFamily": "var(--font-dm-sans), sans-serif"
+      }
+    },
+    "manropeDmSans": {
+      "name": "Manrope + DM Sans",
+      "description": "Geometric headings with clean body. Modern and professional.",
+      "headingFont": "manrope",
+      "bodyFont": "dmSans",
+      "imports": "import { Manrope } from \"next/font/google\";\nimport { DM_Sans } from \"next/font/google\";",
+      "initializations": "const manrope = Manrope({\n  variable: \"--font-manrope\",\n  subsets: [\"latin\"],\n});\n\nconst dmSans = DM_Sans({\n  variable: \"--font-dm-sans\",\n  subsets: [\"latin\"],\n});",
+      "classNames": "${manrope.variable} ${dmSans.variable}",
+      "globalsCss": {
+        "instructions": "Update the font-family property within the existing CSS rules in globals.css (@layer base section)",
+        "bodyRule": "body {\n  /* ... existing properties ... */\n  font-family: var(--font-dm-sans), sans-serif;\n}",
+        "headingsRule": "h1, h2, h3, h4, h5, h6 {\n  font-family: var(--font-manrope), sans-serif;\n}",
+        "bodyFontFamily": "var(--font-dm-sans), sans-serif",
+        "headingsFontFamily": "var(--font-manrope), sans-serif"
+      }
+    }
+  }
+}

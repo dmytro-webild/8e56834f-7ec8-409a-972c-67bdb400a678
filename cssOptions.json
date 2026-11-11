@@ -1,0 +1,147 @@
+{
+  "$comment": "Surface treatments as drop-in CSS. All values read shadcn tokens (--card, --primary, --foreground, --background, --secondary, --accent), so a treatment inherits the project palette and works in light and dark mode unchanged. Apply as a class, e.g. .card / .btn-primary, then use className=\"card rounded-xl p-6\" in place of the default bg-card border shadow-sm trio.",
+  "cards": {
+    "solid": {
+      "css": "background: var(--card);",
+      "description": "Flat fill, no border or shadow. The quietest option."
+    },
+    "outline": {
+      "css": "background: var(--card);\nborder: 1px solid var(--border);",
+      "description": "Flat fill with a hairline border. No shadow \u2014 good for dense grids and dark palettes."
+    },
+    "gradient-mesh": {
+      "css": "background:\nradial-gradient(at 0% 0%, color-mix(in srgb, var(--accent) 15%, transparent) 0px, transparent 50%),\nradial-gradient(at 100% 0%, color-mix(in srgb, var(--accent) 10%, transparent) 0px, transparent 50%),\nradial-gradient(at 100% 100%, color-mix(in srgb, var(--accent) 20%, transparent) 0px, transparent 50%),\nradial-gradient(at 0% 100%, color-mix(in srgb, var(--accent) 12%, transparent) 0px, transparent 50%),\nvar(--card);",
+      "description": "Four corner radial tints blended over the card fill."
+    },
+    "gradient-radial": {
+      "css": "background: radial-gradient(circle at center, color-mix(in srgb, var(--card) 100%, var(--accent) 20%) 0%, var(--card) 90%);",
+      "description": "Single soft radial tint from the center outward."
+    },
+    "inset": {
+      "css": "background: color-mix(in srgb, var(--card) 95%, var(--accent) 5%);\nbox-shadow:\ninset 2px 2px 4px color-mix(in srgb, var(--foreground) 8%, transparent),\ninset -2px -2px 4px color-mix(in srgb, var(--background) 20%, transparent);",
+      "description": "Pressed-in look from inner shadows on two sides."
+    },
+    "glass-elevated": {
+      "css": "backdrop-filter: blur(8px);\nbackground: linear-gradient(to bottom right, color-mix(in srgb, var(--card) 80%, transparent), color-mix(in srgb, var(--card) 40%, transparent));\nbox-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);\nborder: 1px solid var(--card);",
+      "description": "Frosted translucent fill with blur and a light border."
+    },
+    "glass-depth": {
+      "css": "background: color-mix(in srgb, var(--card) 80%, transparent);\nbackdrop-filter: blur(14px);\nbox-shadow:\ninset 0 0 20px 0 color-mix(in srgb, var(--accent) 7.5%, transparent);\nborder: 1px solid var(--border);",
+      "description": "Frosted fill with a hairline border and an inner glow."
+    },
+    "gradient-bordered": {
+      "css": "background: linear-gradient(180deg, color-mix(in srgb, var(--card) 100%, var(--accent) 5%) -35%, var(--card) 65%);\nbox-shadow: 0px 0px 10px 4px color-mix(in srgb, var(--accent) 4%, transparent);\nborder: 1px solid var(--border);",
+      "description": "Gradient fill with a hairline border and a soft outer bloom."
+    },
+    "layered-gradient": {
+      "css": "background:\nlinear-gradient(color-mix(in srgb, var(--accent) 6%, transparent) 0%, transparent 59.26%),\nlinear-gradient(var(--card) 0%, var(--card) 100%),\nvar(--card);\nbox-shadow:\n20px 18px 7px color-mix(in srgb, var(--accent) 0%, transparent),\n2px 2px 2px color-mix(in srgb, var(--accent) 6.5%, transparent),\n1px 1px 2px color-mix(in srgb, var(--accent) 2%, transparent);\nborder: 2px solid var(--secondary);",
+      "description": "Directional gradient fill plus a stacked shadow."
+    },
+    "soft-shadow": {
+      "css": "background: var(--card);\nbox-shadow: color-mix(in srgb, var(--accent) 10%, transparent) 0px 0.706592px 0.706592px -0.666667px, color-mix(in srgb, var(--accent) 8%, transparent) 0px 1.80656px 1.80656px -1.33333px, color-mix(in srgb, var(--accent) 7%, transparent) 0px 3.62176px 3.62176px -2px, color-mix(in srgb, var(--accent) 7%, transparent) 0px 6.8656px 6.8656px -2.66667px, color-mix(in srgb, var(--accent) 5%, transparent) 0px 13.6468px 13.6468px -3.33333px, color-mix(in srgb, var(--accent) 2%, transparent) 0px 30px 30px -4px, var(--background) 0px 3px 1px 0px inset;",
+      "description": "Solid fill with one wide, soft shadow. The safe default."
+    },
+    "subtle-shadow": {
+      "css": "background: var(--card);\nbox-shadow: color-mix(in srgb, var(--foreground) 5%, transparent) 0px 4px 32px 0px;",
+      "description": "Solid fill with a tight, low-contrast shadow."
+    },
+    "elevated-border": {
+      "css": "background: linear-gradient(180deg, color-mix(in srgb, var(--card) 100%, var(--foreground) 3%) 0%, var(--card) 100%);\nbox-shadow: 0 1px 0 0 color-mix(in srgb, var(--foreground) 8%, transparent), 0 4px 6px -1px color-mix(in srgb, var(--foreground) 5%, transparent), 0 10px 15px -3px color-mix(in srgb, var(--foreground) 4%, transparent);\nborder: 1px solid color-mix(in srgb, var(--foreground) 6%, transparent);",
+      "description": "Border plus a lift shadow \u2014 reads crisp on busy backgrounds."
+    },
+    "inner-glow": {
+      "css": "background: var(--card);\nbox-shadow: inset 0 0 30px 0 color-mix(in srgb, var(--foreground) 4%, transparent), inset 0 1px 0 0 color-mix(in srgb, var(--foreground) 8%, transparent), 0 4px 12px -4px color-mix(in srgb, var(--foreground) 8%, transparent);",
+      "description": "Inset highlight along the top edge, like light catching a rim."
+    },
+    "spotlight": {
+      "css": "background:\nradial-gradient(ellipse at 0% 0%, color-mix(in srgb, var(--accent) 20%, transparent) 0%, transparent 50%),\nvar(--card);\nbox-shadow: inset 1px 1px 0 0 color-mix(in srgb, var(--foreground) 10%, transparent), 0 4px 16px -4px color-mix(in srgb, var(--foreground) 10%, transparent);",
+      "description": "Bright top-center falloff, as if lit from above."
+    }
+  },
+  "primaryButtons": {
+    "gradient": {
+      "css": "background: linear-gradient(to bottom, color-mix(in srgb, var(--primary) 75%, transparent), var(--primary));\nbox-shadow: color-mix(in srgb, var(--background) 25%, transparent) 0px 1px 1px 0px inset, color-mix(in srgb, var(--primary) 15%, transparent) 3px 3px 3px 0px;"
+    },
+    "shadow": {
+      "css": "background: var(--primary);\nbox-shadow: 2.10837px 3.16256px 9.48767px color-mix(in srgb, var(--primary) 40%, transparent);"
+    },
+    "flat": {
+      "css": "background: var(--primary);"
+    },
+    "radial-glow": {
+      "css": "background:\nradial-gradient(circle at 0% 0%, color-mix(in srgb, var(--background) 32.5%, transparent) 0%, transparent 45%),\nradial-gradient(circle at 100% 100%, color-mix(in srgb, var(--background) 32.5%, transparent) 0%, transparent 45%),\nvar(--primary);\nbox-shadow: 2.10837px 3.16256px 9.48767px color-mix(in srgb, var(--accent) 30%, transparent);"
+    },
+    "diagonal-gradient": {
+      "css": "background: linear-gradient(to bottom right, color-mix(in srgb, var(--primary) 80%, transparent), var(--foreground));\nbox-shadow: 2.10837px 3.16256px 9.48767px color-mix(in srgb, var(--accent) 30%, transparent);"
+    },
+    "double-inset": {
+      "css": "background: var(--primary);\nbox-shadow: color-mix(in srgb, var(--background) 15%, transparent) 0px 4px 10px 0px inset, color-mix(in srgb, var(--background) 15%, transparent) 0px -4px 8px 0px inset;"
+    },
+    "primary-glow": {
+      "css": "background: var(--primary);\nbox-shadow: color-mix(in srgb, var(--background) 20%, transparent) 0px 3px 1px 0px inset, color-mix(in srgb, var(--primary) 13%, transparent) 0px 0.839802px 0.503881px -0.3125px, color-mix(in srgb, var(--primary) 13%, transparent) 0px 1.99048px 1.19429px -0.625px, color-mix(in srgb, var(--primary) 13%, transparent) 0px 3.63084px 2.1785px -0.9375px, color-mix(in srgb, var(--primary) 13%, transparent) 0px 6.03627px 3.62176px -1.25px, color-mix(in srgb, var(--primary) 13%, transparent) 0px 9.74808px 5.84885px -1.5625px, color-mix(in srgb, var(--primary) 13%, transparent) 0px 15.9566px 9.57398px -1.875px, color-mix(in srgb, var(--primary) 13%, transparent) 0px 27.4762px 16.4857px -2.1875px, color-mix(in srgb, var(--primary) 13%, transparent) 0px 50px 30px -2.5px;"
+    },
+    "inset-glow": {
+      "css": "background: linear-gradient(180deg, color-mix(in srgb, var(--primary) 65%, var(--background)) -35%, var(--primary) 65%);\nbox-shadow: 0 10px 18px -7px color-mix(in srgb, var(--background) 50%, transparent), inset 0 1px 0 0 color-mix(in srgb, var(--foreground) 15%, transparent);\nborder: 1px solid color-mix(in srgb, var(--foreground) 20%, transparent);"
+    },
+    "soft-glow": {
+      "css": "background: radial-gradient(ellipse at 50% -20%, color-mix(in srgb, var(--primary) 70%, var(--foreground)) 0%, var(--primary) 70%);\nbox-shadow: 0 8px 24px -6px color-mix(in srgb, var(--primary) 35%, transparent), inset 0 1px 0 0 color-mix(in srgb, var(--foreground) 20%, transparent);"
+    },
+    "glass-shimmer": {
+      "css": "background: linear-gradient(165deg, color-mix(in srgb, var(--primary) 85%, var(--foreground)) 0%, var(--primary) 40%, color-mix(in srgb, var(--primary) 90%, var(--background)) 100%);\nbox-shadow: inset 0 1px 1px 0 color-mix(in srgb, var(--foreground) 25%, transparent), inset 0 -1px 1px 0 color-mix(in srgb, var(--background) 15%, transparent), 0 4px 12px -2px color-mix(in srgb, var(--primary) 25%, transparent);"
+    },
+    "neon-outline": {
+      "css": "background: var(--primary);\nbox-shadow: 0 0 5px color-mix(in srgb, var(--accent) 50%, transparent), 0 0 15px color-mix(in srgb, var(--accent) 30%, transparent), 0 0 30px color-mix(in srgb, var(--accent) 15%, transparent), inset 0 0 8px color-mix(in srgb, var(--accent) 10%, transparent);"
+    },
+    "lifted": {
+      "css": "background: linear-gradient(180deg, color-mix(in srgb, var(--primary) 95%, var(--foreground)) 0%, var(--primary) 50%, color-mix(in srgb, var(--primary) 95%, var(--background)) 100%);\nbox-shadow: inset 0 2px 3px 0 color-mix(in srgb, var(--foreground) 20%, transparent), inset 0 -2px 3px 0 color-mix(in srgb, var(--background) 25%, transparent), 0 2px 4px -1px color-mix(in srgb, var(--background) 40%, transparent);"
+    },
+    "depth-layers": {
+      "css": "background: var(--primary);\nbox-shadow: 0 1px 2px color-mix(in srgb, var(--primary) 20%, transparent), 0 2px 4px color-mix(in srgb, var(--primary) 20%, transparent), 0 4px 8px color-mix(in srgb, var(--primary) 15%, transparent), 0 8px 16px color-mix(in srgb, var(--primary) 10%, transparent), 0 16px 32px color-mix(in srgb, var(--primary) 5%, transparent);"
+    },
+    "accent-edge": {
+      "css": "background: linear-gradient(180deg, var(--primary) 0%, color-mix(in srgb, var(--primary) 90%, var(--background)) 100%);\nbox-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 60%, transparent), 0 4px 12px -2px color-mix(in srgb, var(--accent) 35%, transparent), inset 0 1px 0 0 color-mix(in srgb, var(--foreground) 20%, transparent);"
+    },
+    "metallic": {
+      "css": "background: linear-gradient(135deg, color-mix(in srgb, var(--primary) 80%, var(--foreground)) 0%, var(--primary) 25%, color-mix(in srgb, var(--primary) 90%, var(--background)) 50%, var(--primary) 75%, color-mix(in srgb, var(--primary) 85%, var(--foreground)) 100%);\nbox-shadow: inset 0 1px 0 0 color-mix(in srgb, var(--foreground) 30%, transparent), 0 3px 8px -2px color-mix(in srgb, var(--background) 50%, transparent);"
+    },
+    "glow-highlight": {
+      "css": "background: var(--primary);\nbox-shadow: 0 1px 2px color-mix(in srgb, var(--foreground) 10%, transparent), 0 3px 5px color-mix(in srgb, var(--primary) 50%, transparent), inset 0 1px 0 0 color-mix(in srgb, var(--background) 25%, transparent);"
+    },
+    "top-highlight": {
+      "css": "background: linear-gradient(180deg, color-mix(in srgb, var(--primary) 80%, var(--background)) 0%, var(--primary) 50%);\nbox-shadow: inset 0 1px 0 0 color-mix(in srgb, var(--background) 25%, transparent);"
+    },
+    "primary-glow-left": {
+      "css": "background: var(--primary);\nbox-shadow: color-mix(in srgb, var(--background) 20%, transparent) 0px 3px 1px 0px inset, color-mix(in srgb, var(--primary) 13%, transparent) -1.26px 0.839802px 0.503881px -0.3125px, color-mix(in srgb, var(--primary) 13%, transparent) -3px 1.99048px 1.19429px -0.625px, color-mix(in srgb, var(--primary) 13%, transparent) -5.4px 3.63084px 2.1785px -0.9375px, color-mix(in srgb, var(--primary) 13%, transparent) -9px 6.03627px 3.62176px -1.25px, color-mix(in srgb, var(--primary) 13%, transparent) -14.6px 9.74808px 5.84885px -1.5625px, color-mix(in srgb, var(--primary) 13%, transparent) -24px 15.9566px 9.57398px -1.875px, color-mix(in srgb, var(--primary) 13%, transparent) -41px 27.4762px 16.4857px -2.1875px, color-mix(in srgb, var(--primary) 13%, transparent) -75px 50px 30px -2.5px;"
+    },
+    "edge-highlight": {
+      "css": "background: var(--primary);\nbox-shadow: inset 0px 1px 0px 0px color-mix(in srgb, var(--foreground) 25%, transparent), inset 0px -1px 0px 0px color-mix(in srgb, var(--foreground) 25%, transparent);"
+    },
+    "inset-border": {
+      "css": "background: var(--primary);\nbox-shadow: inset 0px 1px 0px 0px var(--primary), inset 0px -1px 0px 0px var(--primary), inset 0px 2px 0px 0px color-mix(in srgb, var(--background) 25%, transparent), inset 0px -2px 0px 0px color-mix(in srgb, var(--background) 25%, transparent);"
+    },
+    "inset-border-sharp": {
+      "css": "background: var(--primary);\nbox-shadow: inset 0px 0px 0px 1px var(--primary), inset 0px 0px 0px 2px color-mix(in srgb, var(--background) 25%, transparent);"
+    },
+    "primary-glow-flat": {
+      "css": "background: var(--primary);\nbox-shadow: color-mix(in srgb, var(--primary) 13%, transparent) 0px 0.839802px 0.503881px -0.3125px, color-mix(in srgb, var(--primary) 13%, transparent) 0px 1.99048px 1.19429px -0.625px, color-mix(in srgb, var(--primary) 13%, transparent) 0px 3.63084px 2.1785px -0.9375px, color-mix(in srgb, var(--primary) 13%, transparent) 0px 6.03627px 3.62176px -1.25px, color-mix(in srgb, var(--primary) 13%, transparent) 0px 9.74808px 5.84885px -1.5625px, color-mix(in srgb, var(--primary) 13%, transparent) 0px 15.9566px 9.57398px -1.875px, color-mix(in srgb, var(--primary) 13%, transparent) 0px 27.4762px 16.4857px -2.1875px, color-mix(in srgb, var(--primary) 13%, transparent) 0px 50px 30px -2.5px;"
+    },
+    "primary-glow-flat-left": {
+      "css": "background: var(--primary);\nbox-shadow: color-mix(in srgb, var(--primary) 13%, transparent) -1.26px 0.839802px 0.503881px -0.3125px, color-mix(in srgb, var(--primary) 13%, transparent) -3px 1.99048px 1.19429px -0.625px, color-mix(in srgb, var(--primary) 13%, transparent) -5.4px 3.63084px 2.1785px -0.9375px, color-mix(in srgb, var(--primary) 13%, transparent) -9px 6.03627px 3.62176px -1.25px, color-mix(in srgb, var(--primary) 13%, transparent) -14.6px 9.74808px 5.84885px -1.5625px, color-mix(in srgb, var(--primary) 13%, transparent) -24px 15.9566px 9.57398px -1.875px, color-mix(in srgb, var(--primary) 13%, transparent) -41px 27.4762px 16.4857px -2.1875px, color-mix(in srgb, var(--primary) 13%, transparent) -75px 50px 30px -2.5px;"
+    }
+  },
+  "secondaryButtons": {
+    "glass": {
+      "css": "backdrop-filter: blur(8px);\nbackground: linear-gradient(to bottom right, color-mix(in srgb, var(--secondary) 80%, transparent), var(--secondary));\nbox-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);\nborder: 1px solid var(--secondary);"
+    },
+    "solid": {
+      "css": "background: var(--secondary);",
+      "description": "Flat fill, no border or shadow. The quietest option."
+    },
+    "layered": {
+      "css": "background:\nlinear-gradient(color-mix(in srgb, var(--accent) 5%, transparent) 0%, transparent 59.26%),\nlinear-gradient(var(--secondary), var(--secondary)),\nlinear-gradient(var(--secondary), var(--secondary)),\nlinear-gradient(color-mix(in srgb, var(--accent) 5%, transparent) 0%, transparent 59.26%),\nlinear-gradient(color-mix(in srgb, var(--secondary) 60%, transparent), color-mix(in srgb, var(--secondary) 60%, transparent)),\nvar(--secondary);\nbox-shadow:\n2.10837px 3.16256px 9.48767px color-mix(in srgb, var(--accent) 10%, transparent);\nborder: 1px solid var(--secondary);"
+    },
+    "radial-glow": {
+      "css": "background:\nradial-gradient(circle at 0% 0%, color-mix(in srgb, var(--accent) 15%, transparent) 0%, transparent 40%),\nradial-gradient(circle at 100% 100%, color-mix(in srgb, var(--accent) 15%, transparent) 0%, transparent 40%),\nvar(--secondary);\nbox-shadow: 2.10837px 3.16256px 9.48767px color-mix(in srgb, var(--accent) 10%, transparent);"
+    }
+  }
+}

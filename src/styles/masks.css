@@ -1,0 +1,19 @@
+.mask-fade-x {
+  mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+}
+
+.mask-fade-x-medium {
+  mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+}
+
+.mask-fade-y-medium {
+  mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+}
+
+.mask-fade-top-long {
+  mask-image: linear-gradient(to top, black 0%, black 5%, transparent 100%);
+}
+
+.mask-fade-top-overlay {
+  mask-image: linear-gradient(to bottom, transparent, black 60%);
+}
